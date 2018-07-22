@@ -18,6 +18,8 @@ Calling ```setRNGs(v::Int64)``` sets the RNGs so that output is reproducible.
 Example usage:
 
 ```julia
+using RNGPool
+import Compat.undef
 # on return, each element of out is the average of many Uniform(0,1) pseudo-random variates
 function foo!(out::Vector{Float64}, N::Int64)
   nt = Threads.nthreads()
