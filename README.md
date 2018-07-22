@@ -1,6 +1,15 @@
 # RNGPool.jl
 
-This package provides a simple but hopefully useful interface to a Vector of ```Threads.nthreads()``` Threefry4x random number generators (RNGs). The Threefry4x RNGs are from the [RandomNumbers.jl](https://github.com/sunoru/RandomNumbers.jl) package.
+[![Build Status](https://travis-ci.org/awllee/RNGPool.jl.svg?branch=master)](https://travis-ci.org/awllee/RNGPool.jl)
+[![Build status](https://ci.appveyor.com/api/projects/status/lip5qvw48dwjllau?svg=true)](https://ci.appveyor.com/project/awllee/rngpool-jl)
+[![Coverage Status](https://coveralls.io/repos/github/awllee/RNGPool.jl/badge.svg?branch=master)](https://coveralls.io/github/awllee/RNGPool.jl?branch=master)
+[![codecov.io](http://codecov.io/github/awllee/RNGPool.jl/coverage.svg?branch=master)](http://codecov.io/github/awllee/RNGPool.jl?branch=master)
+
+This package provides a simple interface for thread-specific random number generators (RNGs).
+
+Currently, Threefry4x RNGs are used, as implemented in [RandomNumbers.jl](https://github.com/sunoru/RandomNumbers.jl).
+
+At runtime, a Vector of ```Threads.nthreads()``` RNGs is initialized when the package is loaded.
 
 Calling ```getRNG()``` will return the RNG associated to the thread on which it is called.
 
