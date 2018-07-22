@@ -1,14 +1,15 @@
 # RNGPool.jl
 
-This package provides an interface to a Vector of Threads.nthreads() Threefry4x random number generators (RNGs).
+This package provides a simple but hopefully useful interface to a Vector of ```Threads.nthreads()``` Threefry4x random number generators (RNGs). The Threefry4x RNGs are from the [RandomNumbers.jl](https://github.com/sunoru/RandomNumbers.jl) package.
 
-The function call ```getRNG()``` will return the RNG associated to the thread calling it.
+Calling ```getRNG()``` will return the RNG associated to the thread on which it is called.
 
-The function ```setRNGs(v::Int64)``` resets the RNGs so that output is reproducible.
+Calling ```setRNGs(v::Int64)``` sets the RNGs so that output is reproducible.
 
 Example usage:
 
 ```julia
+# on return, each element of out is the average of many Uniform(0,1) pseudo-random variates
 function foo!(out::Vector{Float64}, N::Int64)
   nt = Threads.nthreads()
   M::Int64 = div(N, nt)
