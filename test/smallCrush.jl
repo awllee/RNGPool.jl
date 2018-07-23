@@ -10,7 +10,7 @@ for i in eachindex(out)
 end
 minpv = 1.0
 for i in eachindex(out)
-  minpv = min(minpv, minimum(out[i]))
+  global minpv = min(minpv, minimum(out[i]))
   @test minimum(out[i]) > 1e-4
 end
 println("Smallest p-value = ", minpv)
