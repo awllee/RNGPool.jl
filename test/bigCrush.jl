@@ -1,5 +1,4 @@
 using RNGTest
-using Compat.Test
 
 include("circularRNG.jl")
 
@@ -11,6 +10,5 @@ end
 minpv = 1.0
 for i in eachindex(out)
   minpv = min(minpv, minimum(out[i]))
-  @test minimum(out[i]) > 1e-4
 end
-println("Smallest p-value = ", minpv)
+println("\nSmallest p-value = ", minpv)
