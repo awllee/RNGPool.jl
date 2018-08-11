@@ -1,5 +1,5 @@
 using RNGPool
-using Compat.Test
+using Test
 
 @testset "Parallel generation" begin
   @time include("test_pg.jl")

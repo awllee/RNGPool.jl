@@ -1,5 +1,5 @@
 using RNGPool
-using Compat.Random
+using Random
 
 setRNGs(1)
 
