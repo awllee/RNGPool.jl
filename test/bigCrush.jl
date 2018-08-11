@@ -1,5 +1,4 @@
 using RNGTest
-
 include("circularRNG.jl")
 
 @time out = RNGTest.bigcrushJulia(generator)

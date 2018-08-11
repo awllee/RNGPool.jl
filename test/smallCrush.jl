@@ -1,5 +1,5 @@
 using RNGTest
-using Compat.Test
+using Test
 
 include("circularRNG.jl")
 

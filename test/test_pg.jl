@@ -1,7 +1,6 @@
 include("parallelGeneration.jl")
 
-import Compat.undef
-import Compat.Statistics.mean
+import Statistics.mean
 
 setRNGs(1)
 nt = Threads.nthreads()

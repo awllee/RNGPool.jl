@@ -1,9 +1,6 @@
-VERSION < v"0.7-" && __precompile__()
-
 module RNGPool
 
 import RandomNumbers.Random123.Threefry4x
-import Compat.undef
 
 const RNG = Threefry4x{UInt64, 20}
 

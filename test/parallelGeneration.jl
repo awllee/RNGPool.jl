@@ -1,5 +1,5 @@
 using RNGPool
-using Compat.Random
+using Random
 
 function foo!(out::Vector{Float64}, N::Int64)
   nt = Threads.nthreads()
