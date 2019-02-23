@@ -1,6 +1,6 @@
 module RNGPool
 
-import RandomNumbers.Random123.Threefry4x
+import Random123.Threefry4x
 
 const RNG = Threefry4x{UInt64, 20}
 
