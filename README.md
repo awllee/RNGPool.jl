@@ -1,9 +1,9 @@
 # RNGPool.jl
 
-[![Build Status](https://travis-ci.org/awllee/RNGPool.jl.svg?branch=master)](https://travis-ci.org/awllee/RNGPool.jl)
-[![Build status](https://ci.appveyor.com/api/projects/status/lip5qvw48dwjllau?svg=true)](https://ci.appveyor.com/project/awllee/rngpool-jl)
-[![Coverage Status](https://coveralls.io/repos/github/awllee/RNGPool.jl/badge.svg?branch=master)](https://coveralls.io/github/awllee/RNGPool.jl?branch=master)
-[![codecov.io](http://codecov.io/github/awllee/RNGPool.jl/coverage.svg?branch=master)](http://codecov.io/github/awllee/RNGPool.jl?branch=master)
+<!-- badges: start -->
+[![CI](https://github.com/awllee/RNGPool.jl/workflows/CI/badge.svg)](https://github.com/awllee/RNGPool.jl/actions)
+[![codecov](https://codecov.io/gh/awllee/RNGPool.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/awllee/RNGPool.jl)
+<!-- badges: end -->
 
 This package provides a simple interface for thread-specific random number generators (RNGs).
 
